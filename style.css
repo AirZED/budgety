@@ -1,0 +1,213 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600&display=swap');
+
+:root {
+    --expenses: rgb(233, 48, 48);
+    --income: rgb(29, 94, 29);
+    --normal-text: white;
+    
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.main {
+    inline-size: 100%;
+    padding: 0;
+    margin: 0;
+    block-size: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.main section {
+    inline-size: 100%;
+    position: relative;
+}
+
+.top {
+    block-size: 45%;
+    background-image: linear-gradient(rgba(51, 50, 50, 0.315), black), url(./images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.top .inside-top{
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inside-top p{
+    color: var(--normal-text);
+    font-size: 1rem;
+    margin: .5rem;
+    
+}
+
+.inside-top .total-amount{
+    color: var(--normal-text);
+    font-size: 3rem;
+    margin: .5rem;
+
+}
+
+.inside-top .income{
+     padding: 1rem;
+     border-radius: 4px;
+     display: flex;
+     background-color: var(--income);
+     margin-bottom: 1rem;
+     justify-content: space-between;
+     inline-size: 20rem;
+
+}
+
+.inside-top .expenses {
+    padding: 1rem;
+    border-radius: 4px;
+    display: flex;
+    background-color: var(--expenses);
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    inline-size: 20rem;
+
+}
+
+.inside-top div div{
+    font-weight: 500;
+}
+
+.inside-top div .income-amount,
+.inside-top div .expense-amount {
+    color: white;
+}
+
+.middle {
+    block-size: 11%;
+    background-color: rgb(223, 221, 221);
+}
+
+.inside-middle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.inside-middle select{
+    padding: .5rem;
+    font-size: 1rem;
+}
+
+.inside-middle input{
+    margin: 0 .5rem;
+    display: flex;
+    padding: .5rem;
+    font-size: 1rem;
+
+}
+.inside-middle .add-description{
+    inline-size: 22rem;
+    
+}
+
+.inside-middle button{
+    padding: .5rem;
+    background: #ccc;
+    border: 1px solid green;
+}
+.inside-middle button:hover{
+background: var(--income);
+}
+
+
+.inside-middle .value{
+    inline-size: 5rem;
+    max-inline-size: auto;
+}
+
+
+.bottom {
+    block-size: 44%;
+    background-color: white;
+}
+
+.inside-bottom{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding-top: 1.5rem;
+    justify-content: center;
+}
+
+.inside-bottom .income-part{
+    padding: 1rem;
+}
+
+.inside-bottom .expense-part {
+    padding: 1rem;
+}
+.inside-bottom .income-part h2{
+ color: var(--income);
+}
+.inside-bottom .expense-part h2{
+    color: var(--expenses);
+}
+.inside-bottom ul{
+   list-style-type: none;
+   padding: 0;
+}
+
+.inside-bottom ul li{
+    display: flex;
+    inline-size: 28rem;
+    border: 1px solid blue;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: .4rem;
+     font-size: 1.2rem;
+}
+
+ul li:nth-child(odd){
+    background-color: rgb(238, 237, 237);
+}
+
+ul li .expense-amount{
+    color: var(--expenses);
+}
+ul li .income-amount{
+    color: var(--income);
+}
+
+@media(max-width= 765px){
+
+    .main {
+      block-size: auto;
+
+    }
+    .top {
+        block-size: auto;
+    }
+
+    .middle {
+        block-size: auto;
+    }
+
+    .bottom {
+        block-size: auto;
+    }
+
+}
