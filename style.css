@@ -3,7 +3,7 @@
 
 :root {
     --expenses: rgb(233, 48, 48);
-    --income: rgb(29, 94, 29);
+    --income: rgb(20, 100, 20);
     --normal-text: white;
     
 }
@@ -91,6 +91,19 @@ body {
 .inside-top div .income-amount,
 .inside-top div .expense-amount {
     color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.inside-top div .expense-amount span{
+    margin: 0 .5rem;
+    background-color: rgba(255, 255, 255, 0.411);
+    padding: .2rem;
+    border-radius: 3px;
+    font-size: .8rem;
 }
 
 .middle {
@@ -115,6 +128,10 @@ body {
     display: flex;
     padding: .5rem;
     font-size: 1rem;
+
+}
+.inside-middle input{
+   outline: none;
 
 }
 .inside-middle .add-description{
@@ -173,12 +190,13 @@ background: var(--income);
 .inside-bottom ul li{
     display: flex;
     inline-size: 28rem;
-    border: 1px solid blue;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
     padding: 1rem;
     justify-content: space-between;
     align-items: center;
     margin-top: .4rem;
-     font-size: 1.2rem;
+     font-size: 1rem;
 }
 
 ul li:nth-child(odd){
@@ -190,6 +208,22 @@ ul li .expense-amount{
 }
 ul li .income-amount{
     color: var(--income);
+}
+
+ul li .expense-amount span{
+     margin: 0 .5rem;
+     background-color: rgba(209, 107, 107, 0.404);
+     padding: .2rem;
+     border-radius: 3px;
+     font-size: .8rem;
+}
+
+.gain, .gain:hover, .gain:focus, .gain:active{
+     border: 2px solid var(--income);
+}
+
+.loss{
+    border: 2px solid var(--expenses);
 }
 
 @media(max-width= 765px){
