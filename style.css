@@ -212,19 +212,57 @@ ul li .income-amount{
 
 ul li .expense-amount span{
      margin: 0 .5rem;
-     background-color: rgba(209, 107, 107, 0.404);
+     background-color: rgba(209, 107, 107, 0.247);
      padding: .2rem;
      border-radius: 3px;
      font-size: .8rem;
 }
 
-.gain, .gain:hover, .gain:focus, .gain:active{
+ul li .income-amount span {
+    margin: 0 .5rem;
+    background-color: rgba(43, 146, 43, 0.247);
+    padding: .2rem;
+    border-radius: 3px;
+    font-size: .8rem;
+}
+ul li .income-amount .remove-list, ul li .expense-amount .remove-list {
+    padding: .2rem .3rem;
+}
+
+input, input:hover, input:focus, input:active{
      border: 2px solid var(--income);
 }
 
-.loss{
+.loss, .loss:hover, .loss:focus, .loss:active{
     border: 2px solid var(--expenses);
 }
+.backdrop{
+    position: absolute;
+    top: 0; right: 0; left: 0; bottom: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.836);
+    align-items: center;
+    justify-content: center;
+}
+
+.backdrop div{
+    background-color: var(--expenses);
+    height: 20%;
+    width: 30%;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.backdrop.active{
+    display: flex;
+}
+
+/* .remove-list{
+    display: none;
+} */
 
 @media(max-width= 765px){
 

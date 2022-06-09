@@ -31,12 +31,12 @@
         <section class="middle">
             <form class="inside-middle">
                 <select name="selector" id="selector">
-                    <option value="" id="add-income">+</option>
-                    <option value="" id="add-expense">-</option>
+                    <option value="inc" id="add-income">+</option>
+                    <option value="exp" id="add-expense">-</option>
                 </select>
 
-                <input class='add-description gain' type="text" placeholder="Add Description">
-                <input class='value gain' type="number" placeholder="Value">
+                <input class='add__description' type="text" placeholder="Add Description">
+                <input class='add__value' type="number" value = "0" placeholder="Value">
                 <button type="button">✅</button>
 
             </form>
@@ -45,34 +45,37 @@
             <div class="inside-bottom">
                 <div class="income-part">
                     <h2>INCOME</h2>
-                    <ul class="income-adons">
-                        <li>
+                    <ul class="inc-adons">
+                        <!-- <li>
                             <div>Webiste Project</div>
-                            <div class="income-amount">$2500.00</div>
+                            <div class="income-amount">$2500.00<span>25%</span><span>x</span></div>
                         </li>
                         <li>
                             <div>Webiste Project</div>
-                            <div class="income-amount">$2500.00</div>
-                        </li>
+                            <div class="income-amount">$2500.00<span>25%</span></div>
+                        </li> -->
                     </ul>
                 </div>
                 <div class="expense-part">
                     <h2>EXPENSES</h2>
-                    <ul class="expense-adons">
-                        <li>
+                    <ul class="exp-adons">
+                        <!-- <li>
                             <div>Bug Soup</div>
                             <div class="expense-amount">$2500.00 <span>50%</span></div>
                         </li>
                         <li>
                             <div>Sponsor Babe</div>
                             <div class="expense-amount">$50,000.00<span>25%</span></div>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>
         </section>
+        
     </section>
-
+<section class="backdrop">
+    <div>ADD DESCRIPTION</div>
+</section>
 
     <script src="./script.js"></script>
 </body>
