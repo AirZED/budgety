@@ -88,17 +88,18 @@ body {
     font-weight: 500;
 }
 
-.inside-top div .income-amount,
-.inside-top div .expense-amount {
+.inside-top div .inc-amount,
+.inside-top div .exp-amount {
     color: white;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin: 0 .5rem;
     
 }
 
-.inside-top div .expense-amount span{
+.inside-top div .exp-amount div span{
     margin: 0 .5rem;
     background-color: rgba(255, 255, 255, 0.411);
     padding: .2rem;
@@ -260,6 +261,9 @@ input, input:hover, input:focus, input:active{
     display: flex;
 }
 
+.simp{
+    display: flex;
+}
 /* .remove-list{
     display: none;
 } */
